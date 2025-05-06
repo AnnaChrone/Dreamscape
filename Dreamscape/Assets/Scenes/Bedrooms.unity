@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2c5a419a235694a9d9e922b22f57d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoad: SpookyMan
+  sceneLoad: Kitchen
   OverlayName: OverlayScene
 --- !u!50 &466992042
 Rigidbody2D:
@@ -1517,8 +1517,8 @@ Transform:
   m_GameObject: {fileID: 577805570}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -964.96, y: -542.27997, z: -4.2349}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -965.3328, y: -542.27997, z: -4.2349}
+  m_LocalScale: {x: 0.4352, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1004579782}
@@ -2930,8 +2930,8 @@ Transform:
   m_GameObject: {fileID: 1039792565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -956.71, y: -542.45996, z: -4.2349}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -957.0425, y: -542.329, z: -4.2349}
+  m_LocalScale: {x: 0.4963, y: 0.6726, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1004579782}
@@ -4423,8 +4423,8 @@ Transform:
   m_GameObject: {fileID: 1983578031}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -955.47003, y: -539.7899, z: -4.2349}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -955.9334, y: -539.7899, z: -4.2349}
+  m_LocalScale: {x: 0.2926, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1004579782}

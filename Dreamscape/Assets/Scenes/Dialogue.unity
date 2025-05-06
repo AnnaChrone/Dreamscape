@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2c5a419a235694a9d9e922b22f57d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoad: MainTopDown
+  sceneLoad: Bedrooms
   OverlayName: OverlayScene
 --- !u!114 &502865903
 MonoBehaviour:
