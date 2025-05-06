@@ -23,7 +23,7 @@ public class PickUp : MonoBehaviour
                     //Item is added to inventory in location of inventory slot
                     inventory.isFull[i] = true;
                     Instantiate(itembutton, inventory.slots[i].transform, false);
-                    Destroy(gameObject); //Destroys game object because we instantiated it
+                   Destroy(gameObject); //Destroys game object because we instantiated it
                     break;
                 }   
             }

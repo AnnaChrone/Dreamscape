@@ -6,24 +6,27 @@ using TMPro;
 public class Collection : MonoBehaviour
 {
     public GameObject tTextBox;
-    public GameObject tLabel;
 
     void OnTriggerEnter2D(Collider2D trigger)
     {
         if (trigger.gameObject.name == "Player")
         {
-            gameObject.SetActive(false); //Disables the object
             
-            ShowText();//Confirms collection
+            ShowText(); // Show the label
+            gameObject.SetActive(false); // Disables the object
         }
     }
 
-    //When an item gets collected it will appear in the inventory UI. This will be done with our sprites.
-
     void ShowText()
     {
-        tTextBox.SetActive(true);  // Enable the text object
-        tLabel.SetActive(false);
+        tTextBox.SetActive(true);
+        StartCoroutine(HideTextAfterDelay(3f));  // Hide after 3 seconds
+    }
+
+    System.Collections.IEnumerator HideTextAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        tTextBox.SetActive(false);
     }
 
     void Start()
@@ -31,5 +34,4 @@ public class Collection : MonoBehaviour
         tTextBox.SetActive(false);  // Ensure the text is hidden at the start
     }
 }
-
 
