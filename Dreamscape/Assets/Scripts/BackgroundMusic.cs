@@ -30,18 +30,33 @@ public class BackgroundMusic : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    void Start()
+    {
+        // Ensure music starts even in the first loaded scene
+        string currentScene = SceneManager.GetActiveScene().name;
+        HandleSceneMusic(currentScene);
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        string sceneName = scene.name;
+        HandleSceneMusic(scene.name);
+    }
 
-        // Basic pattern matching: any scene starting with "Topdown" uses the topdown song
-        if (sceneName.StartsWith("Topdown"))
+    void HandleSceneMusic(string sceneName)
+    {
+        Debug.Log("Handling music for scene: " + sceneName);
+
+        if (sceneName.Contains("Topdown"))
         {
             PlayMusic(TDMusic);
         }
-        else if (sceneName.StartsWith("Dialogue"))
+        else if (sceneName.Contains("Dialogue"))
         {
             PlayMusic(DMusic);
+        }
+        else
+        {
+            Debug.Log("No music assigned for scene: " + sceneName);
         }
     }
 
@@ -55,5 +70,6 @@ public class BackgroundMusic : MonoBehaviour
 
         audioSource.clip = clip;
         audioSource.Play();
+        Debug.Log("Playing music: " + clip.name);
     }
 }
