@@ -1971,6 +1971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
+  collectSound: {fileID: 0}
 --- !u!1 &595943121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
+  collectSound: {fileID: 0}
 --- !u!50 &631679671
 Rigidbody2D:
   serializedVersion: 5
@@ -2627,6 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
+  collectSound: {fileID: 8300000, guid: dae8fff11deee944ea7b34d1a3e9cad3, type: 3}
 --- !u!212 &631679674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4228,6 +4231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
+  collectSound: {fileID: 0}
 --- !u!1 &1040905232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6271,6 +6275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
+  collectSound: {fileID: 0}
 --- !u!1 &2092433337
 GameObject:
   m_ObjectHideFlags: 0
