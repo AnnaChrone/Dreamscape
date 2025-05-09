@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: dae8fff11deee944ea7b34d1a3e9cad3, type: 3}
 --- !u!1 &595943121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4275,7 +4275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: dae8fff11deee944ea7b34d1a3e9cad3, type: 3}
 --- !u!1 &1040905232
 GameObject:
   m_ObjectHideFlags: 0
@@ -11079,7 +11079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 808735389}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: dae8fff11deee944ea7b34d1a3e9cad3, type: 3}
 --- !u!1 &2062101315
 GameObject:
   m_ObjectHideFlags: 0
