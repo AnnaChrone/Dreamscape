@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TDMusic: {fileID: 8300000, guid: d9f989ea65c612045b0326017913ea87, type: 3}
-  DMusic: {fileID: 8300000, guid: c4a78bd1cdb5df44db8a11cf11efe3ce, type: 3}
+  DMusic: {fileID: 8300000, guid: a55ee42ab57e13445bc3542be0f198db, type: 3}
 --- !u!4 &439271298
 Transform:
   m_ObjectHideFlags: 0
