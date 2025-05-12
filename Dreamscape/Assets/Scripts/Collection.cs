@@ -3,6 +3,7 @@ using TMPro;
 
 public class Collection : MonoBehaviour
 {
+    public string itemID; // Unique ID for this item
     public GameObject tTextBox;
     public AudioClip collectSound; // Drag your sound here in the Inspector
 
@@ -12,6 +13,14 @@ public class Collection : MonoBehaviour
 
     void Start()
     {
+        // Destroy this object immediately if it's already collected
+        if (CollectedItemsManager.Instance != null &&
+            CollectedItemsManager.Instance.IsCollected(itemID))
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         tTextBox.SetActive(false);  // Hide text initially
         col = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -42,6 +51,11 @@ public class Collection : MonoBehaviour
     {
         if (col != null) col.enabled = false;
         if (sr != null) sr.enabled = false;
+        ParticleSystemRenderer psr = GetComponentInChildren<ParticleSystemRenderer>();
+        psr.enabled = false;
+
+        if (CollectedItemsManager.Instance != null)
+            CollectedItemsManager.Instance.MarkCollected(itemID);
 
         yield return new WaitForSeconds(delay);
         tTextBox.SetActive(false);
