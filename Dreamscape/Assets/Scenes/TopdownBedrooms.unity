@@ -4578,7 +4578,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.012898907}
+  m_Offset: {x: -0.02702427, y: -4.640585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4588,7 +4588,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.0257975}
+  m_Size: {x: 22.617842, y: 0.95364904}
   m_EdgeRadius: 0
 --- !u!50 &1073021086
 Rigidbody2D:
@@ -5416,63 +5416,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1410016011
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8653719598885068355, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_Name
-      value: Hallway
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.35334408
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.9305835
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 4843985084834002234, guid: 1fa6d392f5fdb574a8b568d08d44900d, type: 3}
 --- !u!1 &1495096754
 GameObject:
   m_ObjectHideFlags: 0
@@ -12013,7 +11956,6 @@ SceneRoots:
   - {fileID: 824907102}
   - {fileID: 1727825725}
   - {fileID: 1951393964}
-  - {fileID: 1410016011}
   - {fileID: 2035392498}
   - {fileID: 361110434}
   - {fileID: 1299513223}
