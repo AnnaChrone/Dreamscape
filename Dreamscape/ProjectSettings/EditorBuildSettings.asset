@@ -15,16 +15,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Dialogue.unity
     guid: 25c936a5183024e4db6baeee377ab1f9
   - enabled: 1
-    path: Assets/Scenes/TopdownBedrooms.unity
+    path: Assets/Scenes/Topdown.unity
     guid: 67b8f239307a4ba48a87664886e8e59d
   - enabled: 1
     path: Assets/Scenes/OverlayScene.unity
     guid: 1001727184db5e541ab04aa09bdc7f68
   - enabled: 1
-    path: Assets/Scenes/TopdownKitchen.unity
+    path: Assets/Scenes/Kitchen scene.unity
     guid: f9561a9cf8d30654eb68e941d6b464eb
   - enabled: 1
-    path: Assets/Scenes/TopdownLivingroom.unity
+    path: Assets/Scenes/Livingroom scene.unity
     guid: 30105d9e6f09de446b39ba4489521c22
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

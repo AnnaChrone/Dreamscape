@@ -1903,7 +1903,7 @@ GameObject:
   - component: {fileID: 466992046}
   - component: {fileID: 466992047}
   m_Layer: 0
-  m_Name: Doorway
+  m_Name: Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2066,7 +2066,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCanvas: TopdownKitchen
   spawnPointInTargetCanvas: bedroomtokitchen
-  overlayName: OverlayCanvas
 --- !u!114 &466992047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14873,8 +14872,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1515713620}
   - {fileID: 1004579782}
+  - {fileID: 1515713620}
   - {fileID: 970368110}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15251,7 +15250,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCanvas: TopdownBedrooms
   spawnPointInTargetCanvas: kitchentobedroom
-  overlayName: OverlayCanvas
 --- !u!50 &932917412
 Rigidbody2D:
   serializedVersion: 5
@@ -16344,7 +16342,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCanvas: TopdownLivingroom
   spawnPointInTargetCanvas: kitchentolivingroom
-  overlayName: OverlayCanvas
 --- !u!50 &996288463
 Rigidbody2D:
   serializedVersion: 5
@@ -19230,7 +19227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCanvas: TopdownKitchen
   spawnPointInTargetCanvas: livingroomtokitchen
-  overlayName: OverlayCanvas
 --- !u!50 &1327739940
 Rigidbody2D:
   serializedVersion: 5
