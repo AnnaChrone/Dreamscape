@@ -8,7 +8,7 @@ using JetBrains.Annotations;
 public class buttonchoice : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
-    public DialogueTrigger DialogueTrigger;
+   // public DialogueTrigger DialogueTrigger;
 
     public void ButtonPressed()
     {
