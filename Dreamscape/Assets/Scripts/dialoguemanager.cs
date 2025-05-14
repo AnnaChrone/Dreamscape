@@ -32,6 +32,7 @@ public class Dialoguemanager: MonoBehaviour
             {
               
                 NextLine();
+                NextActor();
             }
             else
             {
@@ -39,6 +40,11 @@ public class Dialoguemanager: MonoBehaviour
                 textComponent.text = messages[index].message;
             }
         }
+    }
+
+    private void NextActor()
+    {
+        throw new NotImplementedException();
     }
 
     private void NextLine()
