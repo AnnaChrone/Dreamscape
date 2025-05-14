@@ -4,14 +4,17 @@ using TMPro;
 public class ScribbleTalking : MonoBehaviour
 {
     public GameObject tTextBox;
-    public AudioClip ScribbleSound; // Drag your sound here in the Inspector
+    public AudioClip ScribbleSound;
+    public AudioClip AngrySound;
     public bool Interacted = false;
     private AudioSource audioSource;
+    public int ItemsCollected = 0;
 
 
     public GameObject item1;
     public GameObject item2; 
     public GameObject item3; 
+
 
     void Start()
     {
@@ -27,14 +30,21 @@ public class ScribbleTalking : MonoBehaviour
     {
         if (trigger.gameObject.name == "Player" )
         {
-            ShowText(); // Show the label and play sound
-            // Unhide all items
+          
             if (Interacted == false)
-            item1.SetActive(true);
-            item2.SetActive(true);
-            item3.SetActive(true);
-            Interacted = true;
-            print(Interacted);
+            {
+                ShowText(); // Show the label and play sound
+                item1.SetActive(true);
+                item2.SetActive(true);
+                item3.SetActive(true);
+                Interacted = true;
+                print(Interacted);
+            }
+            else if ((ItemsCollected != 3) && (Interacted==true))
+            {
+                ShowTextAngry();
+            }
+            
         }
     }
 
@@ -43,6 +53,16 @@ public class ScribbleTalking : MonoBehaviour
         if (ScribbleSound != null)
             audioSource.PlayOneShot(ScribbleSound);
 
+        tTextBox.SetActive(true);
+        StartCoroutine(HideTextAfterDelay(3f));
+    }
+
+    void ShowTextAngry()
+    {
+        if (AngrySound != null)
+            audioSource.PlayOneShot(AngrySound);
+
+        tTextBox.GetComponent<TMP_Text>().text = "YOU HAVEN'T FOUND ALL THREE, DON'T ANGER ME!";
         tTextBox.SetActive(true);
         StartCoroutine(HideTextAfterDelay(3f));
     }

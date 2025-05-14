@@ -26596,7 +26596,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tTextBox: {fileID: 488776030}
   ScribbleSound: {fileID: 8300000, guid: af3b6ff25ad58844e8267ba49e013a82, type: 3}
+  AngrySound: {fileID: 8300000, guid: 50c6ed0914c57544494645f868f50efa, type: 3}
   Interacted: 0
+  ItemsCollected: 0
   item1: {fileID: 354473758}
   item2: {fileID: 1039792565}
   item3: {fileID: 725804738}
