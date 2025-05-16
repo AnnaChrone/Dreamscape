@@ -15,7 +15,7 @@ public class RoomSwitcher : MonoBehaviour
                 canvas.gameObject.SetActive(true);
             }
             // Always keep OverlayScene and Inventory active
-            else if (canvas.name == "OverlayScene" || canvas.name == "Inventory")
+            else if (canvas.name == "OverlayScene")
             {
                 canvas.gameObject.SetActive(true);
             }
