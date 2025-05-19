@@ -7559,9 +7559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1938ee2887017ff478da9dd07e43982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: TopdownKitchen
-  spawnPointInTargetScene: livingroomtokitchen
-  OverlayName: OverlayScene
+  targetCanvas: 
+  spawnPointInTargetCanvas: 
 --- !u!1 &1928430907
 GameObject:
   m_ObjectHideFlags: 0
@@ -7835,8 +7834,8 @@ Transform:
   m_GameObject: {fileID: 2041996993}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -959.5134, y: -536.8666, z: 13.7589}
-  m_LocalScale: {x: 1.5085763, y: 1.1427916, z: 0.82703}
+  m_LocalPosition: {x: -959.465, y: -536.8423, z: 13.7589}
+  m_LocalScale: {x: 1.5672599, y: 1.2416108, z: 0.82703}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 166194412}
