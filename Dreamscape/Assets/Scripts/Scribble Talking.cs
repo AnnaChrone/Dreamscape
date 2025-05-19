@@ -8,44 +8,55 @@ public class ScribbleTalking : MonoBehaviour
     public AudioClip AngrySound;
     public bool Interacted = false;
     private AudioSource audioSource;
-    public int ItemsCollected = 0;
-
 
     public GameObject item1;
-    public GameObject item2; 
-    public GameObject item3; 
+    public GameObject item2;
+    public GameObject item3;
+    public GameObject ChoiceTeleport;
 
+    private Inventory inventory;
 
     void Start()
     {
         tTextBox.SetActive(false);  // Hide text initially
-
-        // Create or use existing AudioSource
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
 
+        // Get the Inventory component from the Player
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
 
     void OnTriggerEnter2D(Collider2D trigger)
     {
-        if (trigger.gameObject.name == "Player" )
+        if (trigger.gameObject.name == "Player")
         {
-          
-            if (Interacted == false)
+            if (!Interacted)
             {
-                ShowText(); // Show the label and play sound
+                ShowText();
                 item1.SetActive(true);
                 item2.SetActive(true);
                 item3.SetActive(true);
                 Interacted = true;
-                print(Interacted);
             }
-            else if ((ItemsCollected != 3) && (Interacted==true))
+            else if (!AllItemsCollected() && Interacted)
             {
                 ShowTextAngry();
             }
-            
+            else if (AllItemsCollected())
+            {
+                ChoiceTeleport.SetActive(true);
+            }
         }
+    }
+
+    bool AllItemsCollected()
+    {
+        // Ensure the inventory has at least 3 slots
+        if (inventory.isFull.Length >= 3)
+        {
+            return inventory.isFull[0] && inventory.isFull[1] && inventory.isFull[2];
+        }
+        return false;
     }
 
     void ShowText()
