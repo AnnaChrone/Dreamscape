@@ -1229,7 +1229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -446, y: 136}
+  m_AnchoredPosition: {x: -579.75, y: 664}
   m_SizeDelta: {x: 217.07202, y: 96.10501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1550188877
@@ -1380,6 +1380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 796284477}
+  nameTextComponent: {fileID: 0}
   lines:
   - 'My name is inspired by night, Nyx or more so the darkness of it. '
   - 'The way a human mind works fascinates me , the fact a brain is capable of illness
@@ -1398,7 +1399,10 @@ MonoBehaviour:
   - BEEP BEEP BEEP
   - ~Grunts and sighs~
   - I really don't have the energy for this right now
+  Actors: []
   textSpeed: 0.01
+  button1: {fileID: 0}
+  button2: {fileID: 0}
 --- !u!114 &2122504250
 MonoBehaviour:
   m_ObjectHideFlags: 0

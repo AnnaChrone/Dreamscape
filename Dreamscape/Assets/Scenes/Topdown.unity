@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.32156864, g: 0.32156864, b: 0.32156864, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1716,8 +1716,8 @@ Transform:
   m_GameObject: {fileID: 354473758}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -955.28, y: -538.83, z: -4.2349}
-  m_LocalScale: {x: 0.2926, y: 0.5579, z: 1}
+  m_LocalPosition: {x: -955.4208, y: -538.633, z: -4.2349}
+  m_LocalScale: {x: 0.4056169, y: 0.4295239, z: 1.103}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1487295300}
@@ -1776,7 +1776,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.31, y: 0.82}
+    oldSize: {x: 2.49, y: 2.12}
     newSize: {x: 1.31, y: 0.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1841,7 +1841,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 448563759746355636, guid: 56bb5a68450042449b6dd7d422ecfe87, type: 3}
+  m_Sprite: {fileID: 3763580072567850838, guid: feb354c1d9c31d342aba064ce1f3ab9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3702,6 +3702,7 @@ GameObject:
   - component: {fileID: 551944443}
   - component: {fileID: 551944442}
   - component: {fileID: 551944441}
+  - component: {fileID: 551944444}
   m_Layer: 5
   m_Name: Item 3.0
   m_TagString: Untagged
@@ -3772,7 +3773,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 551944442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 551944444}
+        m_TargetAssemblyTypeName: ItemtoDialogue, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &551944442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3793,7 +3806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4241727045068834795, guid: 349f777c8782b3b449d23a24f00b4068, type: 3}
+  m_Sprite: {fileID: -7798027768849356806, guid: feb354c1d9c31d342aba064ce1f3ab9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3811,6 +3824,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551944439}
   m_CullTransparentMesh: 1
+--- !u!114 &551944444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551944439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837882a59f6d2b84aa5b4440f10166b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Flower
+  dialogueSceneName: END
 --- !u!1 &555100425
 GameObject:
   m_ObjectHideFlags: 0
@@ -10203,8 +10230,8 @@ Transform:
   m_GameObject: {fileID: 725804738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -955.47, y: -539.44, z: -4.2349}
-  m_LocalScale: {x: 0.43519998, y: 0.61359996, z: 1}
+  m_LocalPosition: {x: -955.5, y: -539.52, z: -4.2349}
+  m_LocalScale: {x: 0.18696234, y: 0.25329408, z: 0.4128}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 609714017}
@@ -10263,7 +10290,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 0.86}
+    oldSize: {x: 3.33, y: 4.58}
     newSize: {x: 1.32, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10328,7 +10355,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4241727045068834795, guid: 349f777c8782b3b449d23a24f00b4068, type: 3}
+  m_Sprite: {fileID: -7798027768849356806, guid: feb354c1d9c31d342aba064ce1f3ab9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18440,7 +18467,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4088144695865659119, guid: 93c9e9f53d3cb954d92d44fa03e7cace, type: 3}
+  m_Sprite: {fileID: 3450038556841855091, guid: feb354c1d9c31d342aba064ce1f3ab9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18460,8 +18487,8 @@ Transform:
   m_GameObject: {fileID: 1039792565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -958.44, y: -538.95, z: -4.2349}
-  m_LocalScale: {x: 0.25979027, y: 0.47404847, z: 1}
+  m_LocalPosition: {x: -958.58, y: -538.96, z: -4.2349}
+  m_LocalScale: {x: 0.17071597, y: 0.23195192, z: 0.4893}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 808860172}
@@ -18518,7 +18545,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 0.8}
+    oldSize: {x: 1.42, y: 2.22}
     newSize: {x: 1.32, y: 0.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -18753,7 +18780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.32156864, g: 0.32156864, b: 0.32156864, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19308,6 +19335,7 @@ GameObject:
   - component: {fileID: 1104182707}
   - component: {fileID: 1104182706}
   - component: {fileID: 1104182705}
+  - component: {fileID: 1104182708}
   m_Layer: 5
   m_Name: Item 2.0
   m_TagString: Untagged
@@ -19332,8 +19360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: 205.8945, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104182705
 MonoBehaviour:
@@ -19378,7 +19406,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104182706}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1104182708}
+        m_TargetAssemblyTypeName: ItemtoDialogue, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1104182706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19399,7 +19439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4088144695865659119, guid: 93c9e9f53d3cb954d92d44fa03e7cace, type: 3}
+  m_Sprite: {fileID: 3450038556841855091, guid: feb354c1d9c31d342aba064ce1f3ab9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19417,6 +19457,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104182703}
   m_CullTransparentMesh: 1
+--- !u!114 &1104182708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104182703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837882a59f6d2b84aa5b4440f10166b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Lipstick
+  dialogueSceneName: END
 --- !u!1 &1114432421
 GameObject:
   m_ObjectHideFlags: 0
@@ -22062,7 +22116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22099,6 +22153,7 @@ GameObject:
   - component: {fileID: 1371986474}
   - component: {fileID: 1371986473}
   - component: {fileID: 1371986472}
+  - component: {fileID: 1371986475}
   m_Layer: 5
   m_Name: Item 1.0
   m_TagString: Untagged
@@ -22169,7 +22224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1371986473}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1371986475}
+        m_TargetAssemblyTypeName: ItemtoDialogue, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1371986473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22190,7 +22257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 448563759746355636, guid: 56bb5a68450042449b6dd7d422ecfe87, type: 3}
+  m_Sprite: {fileID: 3763580072567850838, guid: feb354c1d9c31d342aba064ce1f3ab9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22208,6 +22275,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371986470}
   m_CullTransparentMesh: 1
+--- !u!114 &1371986475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371986470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837882a59f6d2b84aa5b4440f10166b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Book
+  dialogueSceneName: END
 --- !u!1 &1400404447
 GameObject:
   m_ObjectHideFlags: 0
