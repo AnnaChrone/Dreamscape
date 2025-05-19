@@ -115,6 +115,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -122,12 +135,12 @@ TextureImporter:
       name: Chibi_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 78
-        width: 157
-        height: 284
+        x: 160
+        y: 79
+        width: 155
+        height: 282
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,12 +157,12 @@ TextureImporter:
       name: Chibi_1
       rect:
         serializedVersion: 2
-        x: 436
-        y: 70
-        width: 158
-        height: 292
+        x: 437
+        y: 71
+        width: 156
+        height: 290
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,12 +179,12 @@ TextureImporter:
       name: Chibi_2
       rect:
         serializedVersion: 2
-        x: 709
-        y: 70
-        width: 162
-        height: 290
+        x: 710
+        y: 71
+        width: 160
+        height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1e2f290a5aa47a7469cff072cbbb756b
     internalID: 0
     vertices: []
     indices: 
@@ -197,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chibi_0: 8054329521478511460
+      Chibi_1: 8987289937419660942
+      Chibi_2: 4531773800867347745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
