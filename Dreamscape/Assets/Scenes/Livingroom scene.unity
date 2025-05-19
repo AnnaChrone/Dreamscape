@@ -1105,8 +1105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterSound: {fileID: 8300000, guid: d10a2125a56f76249a075c1ed0abcd2e, type: 3}
   exitSound: {fileID: 8300000, guid: 4c606f4929f95d94693fd77c44ee7c62, type: 3}
-  closedDoorSprite: {fileID: 0}
-  openDoorSprite: {fileID: 0}
 --- !u!82 &1202814747
 AudioSource:
   m_ObjectHideFlags: 0

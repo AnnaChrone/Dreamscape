@@ -1,9 +1,3 @@
-/* Title: Inventory-Tutorial-Series
-Authors:Blackthornprod, Calice, L. 
-Date: 5 May 2025
-Version: -
-Availability: https://github.com/BlackthornProd/Inventory-Tutorial-Series
-*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
