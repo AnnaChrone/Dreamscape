@@ -44,7 +44,10 @@ public class ScribbleTalking : MonoBehaviour
             }
             else if (AllItemsCollected())
             {
+                tTextBox.GetComponent<TMP_Text>().text = "Step into the darkness, and make your pick...";
                 ChoiceTeleport.SetActive(true);
+                tTextBox.SetActive(true);
+                StartCoroutine(HideTextAfterDelay(3f));
             }
         }
     }
@@ -73,7 +76,7 @@ public class ScribbleTalking : MonoBehaviour
         if (AngrySound != null)
             audioSource.PlayOneShot(AngrySound);
 
-        tTextBox.GetComponent<TMP_Text>().text = "YOU HAVEN'T FOUND ALL THREE, DON'T ANGER ME!";
+        tTextBox.GetComponent<TMP_Text>().text = "Oh child, do you not listen? FIND ALL THREE!";
         tTextBox.SetActive(true);
         StartCoroutine(HideTextAfterDelay(3f));
     }
