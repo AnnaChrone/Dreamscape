@@ -4,18 +4,29 @@ public class DoorSounds : MonoBehaviour
 {
     public AudioClip enterSound;
     public AudioClip exitSound;
+
+    public Sprite closedDoorSprite;
+    public Sprite openDoorSprite;
+
     private AudioSource audioSource;
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // assumes the SpriteRenderer is on the same GameObject
     }
 
     void OnTriggerEnter2D(Collider2D enter)
     {
         if (enter.CompareTag("Player"))
         {
-            audioSource.clip = enterSound;
-            audioSource.Play();
+            spriteRenderer.sprite = openDoorSprite;
+            if (enterSound != null)
+            {
+                audioSource.clip = enterSound;
+                audioSource.Play();
+            }
         }
     }
 
@@ -23,8 +34,13 @@ public class DoorSounds : MonoBehaviour
     {
         if (exit.CompareTag("Player"))
         {
-            audioSource.clip = exitSound;
-            audioSource.Play();
+            spriteRenderer.sprite = closedDoorSprite;
+            if (exitSound != null)
+            {
+                audioSource.clip = exitSound;
+                audioSource.Play();
+            }
         }
     }
 }
+

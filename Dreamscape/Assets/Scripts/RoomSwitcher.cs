@@ -7,15 +7,14 @@ public class RoomSwitcher : MonoBehaviour
         // Find all canvases in the scene (including those from additive scenes like the UI overlay)
         Canvas[] canvases = GameObject.FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
-
         foreach (Canvas canvas in canvases)
         {
-            // If it's the one we're switching to, enable it
+            // Enable the target canvas
             if (canvas.name == canvasName)
             {
                 canvas.gameObject.SetActive(true);
             }
-            // Always keep the overlay canvas on
+            // Always keep OverlayScene and Inventory active
             else if (canvas.name == "OverlayScene")
             {
                 canvas.gameObject.SetActive(true);
@@ -28,3 +27,4 @@ public class RoomSwitcher : MonoBehaviour
         }
     }
 }
+

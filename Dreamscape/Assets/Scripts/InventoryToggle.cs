@@ -5,6 +5,13 @@ using UnityEngine;
 public class InventoryToggle : MonoBehaviour
 {
     public GameObject Inventory_Toggle;
+    void Start()
+    {
+        if (Inventory_Toggle == null)
+        {
+            Debug.LogError($"[InventoryToggle] {gameObject.name} is missing its Inventory_Toggle assignment!");
+        }
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))

@@ -2,19 +2,32 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public string targetCanvas;               // Name of the canvas (same as the former scene)
-    public string spawnPointInTargetCanvas;   // Where to place the player in the target canvas
+    public string targetCanvas;               // Name of the canvas (scene) to switch to
+    public string spawnPointInTargetCanvas;   // Name of the spawn point in that canvas
+
+    private static bool isSwitching = false;  // Prevent rapid switching
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isSwitching)
         {
-            // Set spawn point for the player
+            isSwitching = true;
+
+            // Set player spawn point
             SceneController.SetSpawnPoint(spawnPointInTargetCanvas);
 
-            // Switch canvases
+            // Switch room
             RoomSwitcher.SwitchToCanvas(targetCanvas);
+
+            // Start cooldown to prevent instant re-trigger
+            Invoke(nameof(ResetSwitching), 0.5f); // Half a second buffer — adjust as needed
         }
     }
+
+    private void ResetSwitching()
+    {
+        isSwitching = false;
+    }
 }
+
 

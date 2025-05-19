@@ -1,11 +1,11 @@
 using UnityEngine;
-using TMPro;
+using System.Collections;
 
 public class Collection : MonoBehaviour
 {
-    public string itemID; // Unique ID for this item
-    public GameObject tTextBox;
-    public AudioClip collectSound; // Drag your sound here in the Inspector
+    public string itemID;                    // Unique ID for this item
+    public GameObject tTextBox;              // UI text object (e.g., "Item Collected")
+    public AudioClip collectSound;           // Sound to play on pickup
 
     private Collider2D col;
     private SpriteRenderer sr;
@@ -13,7 +13,7 @@ public class Collection : MonoBehaviour
 
     void Start()
     {
-        // Destroy this object immediately if it's already collected
+        // If already collected, destroy self
         if (CollectedItemsManager.Instance != null &&
             CollectedItemsManager.Instance.IsCollected(itemID))
         {
@@ -21,45 +21,81 @@ public class Collection : MonoBehaviour
             return;
         }
 
-        tTextBox.SetActive(false);  // Hide text initially
+        if (tTextBox != null)
+            tTextBox.SetActive(false);  // Hide text initially
+
         col = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
 
-        // Create or use existing AudioSource
+        // Create or use AudioSource
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
     }
 
     void OnTriggerEnter2D(Collider2D trigger)
     {
-        if (trigger.gameObject.name == "Player")
+        if (trigger.gameObject.CompareTag("Player"))
         {
-            ShowText(); // Show the label and play sound
+            ShowText();
         }
     }
 
     void ShowText()
     {
-        if (collectSound != null)
-            audioSource.PlayOneShot(collectSound);
+        if (CollectedItemsManager.Instance != null && collectSound != null)
+        {
+            CollectedItemsManager.Instance.PlayCollectSound(collectSound);
+        }
 
-        tTextBox.SetActive(true);
-        StartCoroutine(HideTextAfterDelay(2f));
-    }
 
-    System.Collections.IEnumerator HideTextAfterDelay(float delay)
-    {
+        if (tTextBox != null)
+        {
+            tTextBox.SetActive(true);
+            CollectedItemsManager.Instance.StartCoroutine(
+        CollectedItemsManager.Instance.HideTextExternally(tTextBox, gameObject, 2f));
+        }
+
+        // Disable item visuals
         if (col != null) col.enabled = false;
         if (sr != null) sr.enabled = false;
+
         ParticleSystemRenderer psr = GetComponentInChildren<ParticleSystemRenderer>();
-        psr.enabled = false;
-
-        if (CollectedItemsManager.Instance != null)
-            CollectedItemsManager.Instance.MarkCollected(itemID);
-
-        yield return new WaitForSeconds(delay);
-        tTextBox.SetActive(false);
-        Destroy(gameObject); // Destroy item after sound and text
+        if (psr != null) psr.enabled = false;
     }
+
+    IEnumerator HideTextAfterDelay(float delay)
+    {
+        Debug.Log("Coroutine started for delay: " + delay);
+
+        float elapsed = 0f;
+        while (elapsed < delay)
+        {
+            elapsed += Time.deltaTime;
+            Debug.Log($"Coroutine running... elapsed = {elapsed:F2}");
+            yield return null;
+        }
+
+        Debug.Log("Coroutine finished. Hiding text.");
+
+        if (tTextBox != null)
+        {
+            Debug.Log("Deactivating tTextBox: " + tTextBox.name);
+            tTextBox.SetActive(false);
+        }
+        else
+        {
+            Debug.LogWarning("tTextBox was null during coroutine end!");
+        }
+
+        Debug.Log("Destroying collected item object.");
+        Destroy(gameObject);
+    }
+
 }
+
+
+
+
+
+
 
