@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Collection : MonoBehaviour
 {
@@ -41,22 +42,20 @@ public class Collection : MonoBehaviour
 
     void ShowText()
     {
-        if (collectSound != null && audioSource != null && audioSource.enabled)
+        if (CollectedItemsManager.Instance != null && collectSound != null)
         {
-            audioSource.PlayOneShot(collectSound);
+            CollectedItemsManager.Instance.PlayCollectSound(collectSound);
         }
+
 
         if (tTextBox != null)
         {
             tTextBox.SetActive(true);
-            StartCoroutine(HideTextAfterDelay(2f));
+            CollectedItemsManager.Instance.StartCoroutine(
+        CollectedItemsManager.Instance.HideTextExternally(tTextBox, gameObject, 2f));
         }
 
-        // Immediately mark the item as collected
-        if (CollectedItemsManager.Instance != null)
-            CollectedItemsManager.Instance.MarkCollected(itemID);
-
-        // Hide the item's sprite and collider right away
+        // Disable item visuals
         if (col != null) col.enabled = false;
         if (sr != null) sr.enabled = false;
 
@@ -64,16 +63,36 @@ public class Collection : MonoBehaviour
         if (psr != null) psr.enabled = false;
     }
 
-    System.Collections.IEnumerator HideTextAfterDelay(float delay)
+    IEnumerator HideTextAfterDelay(float delay)
     {
-        yield return new WaitForSeconds(delay);
+        Debug.Log("Coroutine started for delay: " + delay);
+
+        float elapsed = 0f;
+        while (elapsed < delay)
+        {
+            elapsed += Time.deltaTime;
+            Debug.Log($"Coroutine running... elapsed = {elapsed:F2}");
+            yield return null;
+        }
+
+        Debug.Log("Coroutine finished. Hiding text.");
 
         if (tTextBox != null)
+        {
+            Debug.Log("Deactivating tTextBox: " + tTextBox.name);
             tTextBox.SetActive(false);
+        }
+        else
+        {
+            Debug.LogWarning("tTextBox was null during coroutine end!");
+        }
 
-        Destroy(gameObject); // Fully remove the item
+        Debug.Log("Destroying collected item object.");
+        Destroy(gameObject);
     }
+
 }
+
 
 
 
