@@ -40,13 +40,13 @@ public class Test : MonoBehaviour
         {
             movePosition.x -= 1; //(-1,0,0)
             IsWalking = true;
-            transform.localScale = new Vector3(-1, transform.localScale.y);
+            transform.localScale = new Vector3(-0.3f, transform.localScale.y);
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             movePosition.x += 1; //(1,0,0)
             IsWalking = true;
-            transform.localScale = new Vector3(1, transform.localScale.y);
+            transform.localScale = new Vector3(0.3f, transform.localScale.y);
         }                                                                        //every second not every frame
         Player.transform.position += movePosition.normalized * movespeed * Time.deltaTime; //keeps movement position locked
     }
