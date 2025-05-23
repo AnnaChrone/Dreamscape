@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 4c461befecf341644938bf0df4aeac61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2703922404177544632
+    second: mr.squiggles_0
+  - first:
+      213: -4039593982899541626
+    second: mr.squiggles_1
+  - first:
+      213: -300449167255149493
+    second: mr.squiggles_2
+  - first:
+      213: -7804794594144449266
+    second: mr.squiggles_3
+  - first:
+      213: -4514481554284383314
+    second: mr.squiggles_4
+  - first:
+      213: 1252110220572500030
+    second: mr.squiggles_5
+  - first:
+      213: 5382010538196047807
+    second: mr.squiggles_6
+  - first:
+      213: -892592830947975232
+    second: mr.squiggles_7
+  - first:
+      213: -585568770432548547
+    second: mr.squiggles_8
+  - first:
+      213: 5104935641958989973
+    second: mr.squiggles_9
+  - first:
+      213: 8840135748524035846
+    second: mr.squiggles_10
+  - first:
+      213: 5089986461051332669
+    second: mr.squiggles_11
+  - first:
+      213: 4072781871050120234
+    second: mr.squiggles_12
+  - first:
+      213: -8720331904697333511
+    second: mr.squiggles_13
+  - first:
+      213: 1608539682422546541
+    second: mr.squiggles_14
+  - first:
+      213: 9082964252086821101
+    second: mr.squiggles_15
+  - first:
+      213: -4823986304839113086
+    second: mr.squiggles_16
+  - first:
+      213: -2654864362310399168
+    second: mr.squiggles_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mr.squiggles_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 298
+        width: 111
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84af6ce36ecb97ad0800000000000000
+      internalID: -2703922404177544632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 299
+        width: 147
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689a77cdcaa70f7c0800000000000000
+      internalID: -4039593982899541626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 300
+        width: 140
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44e1b0031794dbf0800000000000000
+      internalID: -300449167255149493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_3
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 286
+        width: 115
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d812f0baccfa390800000000000000
+      internalID: -7804794594144449266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_4
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 308
+        width: 124
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea373d3f1f65951c0800000000000000
+      internalID: -4514481554284383314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_5
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 296
+        width: 143
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e302cd49c93606110800000000000000
+      internalID: 1252110220572500030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 296
+        width: 140
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb79592c11eb0ba40800000000000000
+      internalID: 5382010538196047807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_7
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 294
+        width: 121
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf1946ac8fdc93f0800000000000000
+      internalID: -892592830947975232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 51
+        width: 126
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d314ec64e44afd7f0800000000000000
+      internalID: -585568770432548547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 57
+        width: 155
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59042345bef58d640800000000000000
+      internalID: 5104935641958989973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 186
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fc10150a87eaa70800000000000000
+      internalID: 8840135748524035846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 187
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38238ae7b343a640800000000000000
+      internalID: 5089986461051332669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 190
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cd79f788d658830800000000000000
+      internalID: 4072781871050120234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_13
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 65
+        width: 109
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f88201c5582bf680800000000000000
+      internalID: -8720331904697333511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_14
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 54
+        width: 108
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d606ae9915ea25610800000000000000
+      internalID: 1608539682422546541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_15
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 58
+        width: 131
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0e4391ddb2d0e70800000000000000
+      internalID: 9082964252086821101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_16
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 46
+        width: 126
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28627baa302cd0db0800000000000000
+      internalID: -4823986304839113086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mr.squiggles_17
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 107
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b05a5bde6082bd0800000000000000
+      internalID: -2654864362310399168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c6decfc7d3985ce449c112c38641a1e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mr.squiggles_0: -2703922404177544632
+      mr.squiggles_1: -4039593982899541626
+      mr.squiggles_10: 8840135748524035846
+      mr.squiggles_11: 5089986461051332669
+      mr.squiggles_12: 4072781871050120234
+      mr.squiggles_13: -8720331904697333511
+      mr.squiggles_14: 1608539682422546541
+      mr.squiggles_15: 9082964252086821101
+      mr.squiggles_16: -4823986304839113086
+      mr.squiggles_17: -2654864362310399168
+      mr.squiggles_2: -300449167255149493
+      mr.squiggles_3: -7804794594144449266
+      mr.squiggles_4: -4514481554284383314
+      mr.squiggles_5: 1252110220572500030
+      mr.squiggles_6: 5382010538196047807
+      mr.squiggles_7: -892592830947975232
+      mr.squiggles_8: -585568770432548547
+      mr.squiggles_9: 5104935641958989973
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
