@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f61c69ab8aded49902c0366cc6b04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 3
+  movespeed: 2
   Player: {fileID: 42197091}
 --- !u!61 &42197095
 BoxCollider2D:
@@ -3485,7 +3485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f61c69ab8aded49902c0366cc6b04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 3
+  movespeed: 2
   Player: {fileID: 526781772}
 --- !u!61 &526781775
 BoxCollider2D:
@@ -18214,7 +18214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1004579779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22052,7 +22052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f61c69ab8aded49902c0366cc6b04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 3
+  movespeed: 2
   Player: {fileID: 1395902088}
 --- !u!61 &1395902092
 BoxCollider2D:
@@ -28223,7 +28223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1515713620
 RectTransform:
   m_ObjectHideFlags: 0
