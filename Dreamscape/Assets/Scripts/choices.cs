@@ -19,15 +19,9 @@ public class DialogueSystem : MonoBehaviour
     public GameObject dialoguebox10;
     public GameObject dialoguebox11;
     public GameObject dialoguebox12;
-    public GameObject dialoguebox13;
-    public GameObject dialoguebox14;
-    public GameObject dialoguebox15;
-    public GameObject dialoguebox16;
-    public GameObject dialoguebox17;
-    public GameObject dialoguebox18;
-    public GameObject dialoguebox19;
-    public GameObject dialoguebox20;
-    public GameObject dialoguebox21;
+   
+
+
     private int currentDialogueIndex = 0;
 
     // Sample dialogue structure
@@ -62,13 +56,15 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
+    //FOR SLACK OFF WE'REGONNA DO CHOICE 0.5 ; 1.5 NOT TO CONFUSE THE CURRENT DIALOGUEBOXES
+
 
     //set.Active means when you press the button 
     public void choice1()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox2.SetActive(false);
+        dialoguebox1.SetActive(false);
         dialoguebox3.SetActive(true);
 
     }
@@ -77,7 +73,7 @@ public class DialogueSystem : MonoBehaviour
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox3.SetActive(false);
+        dialoguebox2.SetActive(false);
         dialoguebox4.SetActive(true);
 
     }
@@ -86,8 +82,8 @@ public class DialogueSystem : MonoBehaviour
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox4.SetActive(false);
-        dialoguebox5.SetActive(true);
+        dialoguebox3.SetActive(false);
+        dialoguebox4.SetActive(true);
 
     }
 
@@ -95,20 +91,28 @@ public class DialogueSystem : MonoBehaviour
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox5.SetActive(false);
-        dialoguebox6.SetActive(true);
+        dialoguebox4.SetActive(false);
+        dialoguebox5.SetActive(true);
 
     }
     public void choice5()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox6.SetActive(false);
-        dialoguebox7.SetActive(true);
+        dialoguebox4.SetActive(false);
+        dialoguebox6.SetActive(true);
 
     }
 
     public void choice6()
+    //code for a button click 
+    {
+        //moving from the 2nd panel to the 3rd panel at the click of a button 
+        dialoguebox5.SetActive(false);
+        dialoguebox7.SetActive(true);
+
+    }
+    public void choice7()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
@@ -117,7 +121,7 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
-    public void choice7()
+    public void choice8()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
@@ -125,7 +129,7 @@ public class DialogueSystem : MonoBehaviour
         dialoguebox9.SetActive(true);
 
     }
-    public void choice8()
+    public void choice9()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
@@ -133,7 +137,7 @@ public class DialogueSystem : MonoBehaviour
         dialoguebox10.SetActive(true);
 
     }
-    public void choice9()
+    public void choice10()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
@@ -142,7 +146,7 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
-    public void choice10()
+    public void choice11()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
@@ -150,86 +154,18 @@ public class DialogueSystem : MonoBehaviour
         dialoguebox12.SetActive(true);
 
     }
-    public void choice11()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox12.SetActive(false);
-        dialoguebox13.SetActive(true);
-
-    }
-
     public void choice12()
     //code for a button click 
     {
         //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox13.SetActive(false);
-        dialoguebox14.SetActive(true);
+        dialoguebox11.SetActive(false);
+        dialoguebox12.SetActive(true);
 
     }
 
-    public void choice13()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox14.SetActive(false);
-        dialoguebox15.SetActive(true);
 
-    }
 
-    public void choice14()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox15.SetActive(false);
-        dialoguebox16.SetActive(true);
 
-    }
-
-    public void choice15()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox16.SetActive(false);
-        dialoguebox17.SetActive(true);
-
-    }
-
-    public void choice16()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox17.SetActive(false);
-        dialoguebox18.SetActive(true);
-
-    }
-
-    public void choice17()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox18.SetActive(false);
-        dialoguebox19.SetActive(true);
-
-    }
-
-    public void choice18()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox19.SetActive(false);
-        dialoguebox20.SetActive(true);
-
-    }
-
-    public void choice19()
-    //code for a button click 
-    {
-        //moving from the 2nd panel to the 3rd panel at the click of a button 
-        dialoguebox20.SetActive(false);
-        dialoguebox21.SetActive(true);
-
-    }
 
 
 
